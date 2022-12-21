@@ -1,57 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css" type="text/css">
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v6.2.1/css/all.css"
+    />
     <title>Basic Calculator</title>
-</head>
-<body>
-    <h1>basic calculator</h1>
-
+  </head>
+  <body>
     <div class="container">
-        <div class="row">
-            <input type="text" class="input" autofocus="true" aria-label="Input calculation">
+      <h1>basic calculator</h1>
+      <div class="calculator dark">
+        <div class="upper">
+          <i class="fa-solid fa-moon theme-toggler active"></i>
+          <div class="row">
+            <input
+              type="text"
+              class="input"
+              autofocus="true"
+              aria-label="Input calculation"
+            />
+          </div>
         </div>
-        <hr>
+        <hr />
         <div class="wrapper">
-            <div class="row">
-                <button type="button" class="operation">C</button>
-                <button type="button" class="operation">%</button>
-                <button type="button" class="operation">M+</button>
-                <button type="button" class="operation">M-</button>
-            </div>
-            <div class="row">
-                <button type="button" class="">7</button>
-                <button type="button" class="">8</button>
-                <button type="button" class="">9</button>
-                <button type="button" class="operation">*</button>
-            </div>
-            <div class="row">
-                <button type="button" class="">4</button>
-                <button type="button" class="">5</button>
-                <button type="button" class="">6</button>
-                <button type="button" class="operation">/</button>
-            </div>
-            <div class="row">
-                <button type="button" class="">1</button>
-                <button type="button" class="">2</button>
-                <button type="button" class="">3</button>
-                <button type="button" class="operation">+</button>
-            </div>
-            <div class="row">
-                <button type="button" class="">0</button>
-                <button type="button" class="">.</button>
-                <button type="button" id="equals">=</button>
-                <button type="button" class="operation">-</button>
-            </div>
+          <div class="row">
+            <button type="button" class="button operation" id="clear-all">
+              C
+            </button>
+            <button type="button" class="button operation" id="%">%</button>
+            <button
+              type="button"
+              class="button operation"
+              id="backspace"
+              aria-labelledby="backspace"
+            >
+              <i class="fa-solid fa-delete-left"></i>
+            </button>
+            <button type="button" class="button operation" id="/">
+              &divide;
+            </button>
+          </div>
+          <div class="row">
+            <button type="button" class="button" id="7">7</button>
+            <button type="button" class="button" id="8">8</button>
+            <button type="button" class="button" id="9">9</button>
+            <button type="button" class="button operation" id="*">
+              &times;
+            </button>
+          </div>
+          <div class="row">
+            <button type="button" class="button" id="4">4</button>
+            <button type="button" class="button" id="5">5</button>
+            <button type="button" class="button" id="6">6</button>
+            <button type="button" class="button operation" id="-">-</button>
+          </div>
+          <div class="row">
+            <button type="button" class="button" id="1">1</button>
+            <button type="button" class="button" id="2">2</button>
+            <button type="button" class="button" id="3">3</button>
+            <button type="button" class="button operation" id="+">+</button>
+          </div>
+          <div class="row">
+            <button type="button" class="zero button" id="0">0</button>
+            <button type="button" class="button" id=".">.</button>
+            <button type="button" class="button" id="equals">=</button>
+          </div>
         </div>
+      </div>
+      <h3>Developed by: Bianca Aquino</h3>
     </div>
-
-    <script src="script.js">
-
-    </script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
